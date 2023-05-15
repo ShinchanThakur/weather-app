@@ -1,0 +1,19 @@
+const request = require('postman-request');
+const config = require('../config.json');
+
+const geocode = (address, callback) => {
+    const geocodeApiKey = config.geocode_api_key;
+    const url = 'https://www.mapquestapi.com/geocoding/v1/address?key=' + geocodeApiKey + '&location=' + encodeURIComponent(address);
+
+    request({ url, json: true }, (error, response) => {
+        if (error) {
+            callback('Unable to connect to location services!', undefined);
+        }
+        else if (response.body.results[0].locations[0].adminArea5 === '')
+            callback('Unable to find location. Try another search.', undefined);
+        else
+            callback(undefined, response.body.results[0].locations[0].adminArea5);
+    })
+}
+
+module.exports = geocode;
