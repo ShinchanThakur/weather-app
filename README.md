@@ -6,7 +6,9 @@ This is a console app which helps you to get weather forecast for your city.
 
 Following Node/JS topics are are the main focus in this console app - 
 
+- Asynchronous JS
 - Http request, response and error handling
+- Callback functions and chaining
 
 ## Node/JS Topics covered
 
