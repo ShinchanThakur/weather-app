@@ -12,12 +12,9 @@ const geocode = (address, callback) => {
         else if (response.body.results[0].locations[0].adminArea5 === '')
             callback('Unable to find location. Try another search.', undefined);
         else {
-            const city = response.body.results[0].locations[0].adminArea5;
-            const country = response.body.results[0].locations[0].adminArea1;
             const lattitude = response.body.results[0].locations[0].latLng.lat;
             const longitude = response.body.results[0].locations[0].latLng.lng;
             callback(undefined, {
-                place: city + ', ' + country,
                 lattitude,
                 longitude
             });
