@@ -10,7 +10,7 @@ geocode(address, (error, { lattitude, longitude } = {}) => {
     forecast(lattitude, longitude, (error, response) => {
         if (error)
             return console.log(error);
-        console.log(response.location)
+        console.log(response.location);
         console.log(response.forecast);
     });
 });
