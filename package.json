@@ -9,6 +9,7 @@
   "author": "Rohan Thakur",
   "license": "ISC",
   "dependencies": {
+    "express": "^4.18.2",
     "postman-request": "^2.88.1-postman.32"
   }
 }

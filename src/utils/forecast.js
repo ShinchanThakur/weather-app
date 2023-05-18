@@ -1,5 +1,5 @@
 const request = require('postman-request');
-const config = require('../config.json');
+const config = require('../../config/config.json');
 
 const forecast = (lattitude, longitude, callback) => {
     const forcastApiKey = config.forecast_api_key;

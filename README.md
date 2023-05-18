@@ -30,6 +30,6 @@ eg -> node app.js Chandigarh
 ## Config file settings
 Before running the app in your local machine, follow the following steps to setup config file - 
 
-- Copy the template_config.json file in the same folder.
+- Copy the template_config.json file in the same folder (config folder).
 - Name the new file as config.json.
 - Replace the values with your api keys.
