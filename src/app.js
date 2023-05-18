@@ -31,6 +31,13 @@ app.get('/weather', (req, res) => {
     });
 });
 
+app.get('*', (req, res) => {
+    res.send({
+        error: 'Page not found',
+        suggestion: 'Try going to this path -> /weather?address=Chandigarh'
+    })
+})
+
 app.listen(3000, () => {
     console.log('Server is up on port 3000.')
 })
