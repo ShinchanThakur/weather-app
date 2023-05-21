@@ -20,7 +20,7 @@ Following Node/JS topics are covered in this console app -
 - Error handling
 
 ## Features
-Following features are available in this console app - 
+Following features are available in this node app - 
 
 ### 1. Get weather for your city
 You can get weather for your city using the following API - 
